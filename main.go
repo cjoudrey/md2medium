@@ -83,6 +83,11 @@ func main() {
 		&oauth2.Token{AccessToken: config.GitHubAccessToken},
 	)))
 
+	metadata, markdownContent, err := ExtractMarkdownMetadata(markdownContent)
+	if err != nil {
+		logger.Error(fmt.Sprintf("Failed to extract metadata from Markdown file: %s", err))
+	}
+
 	postHtml := string(MarkdownToHTML(markdownContent)[:])
 
 	htmlFormatter, _ := NewHtmlFormatter(markdownPath, postHtml, logger, ctx)
@@ -107,6 +112,7 @@ func main() {
 		Content:       formattedHtml,
 		ContentFormat: medium.ContentFormatHTML,
 		PublishStatus: medium.PublishStatusDraft,
+		Tags:          metadata.Tags,
 	})
 	s.Stop()
 

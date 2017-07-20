@@ -31,6 +31,23 @@ under the image:
 
 ![](screenshot2.png)
 
+**Metadata extraction**
+
+By embedding [YAML](http://yaml.org/) metadata at the top of a markdown file, extra information can be sent to Medium.
+
+For now, only tags can be specified in this format.
+
+Example usage:
+
+```markdown
+---
+tags: [GraphQL, Ruby]
+---
+
+# My article about GraphQL and Ruby
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+```
 
 ## Contributing
 
