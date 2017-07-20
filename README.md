@@ -12,6 +12,14 @@ Write your blog posts in Markdown and publish them on Medium using `md2medium`.
 go get -u github.com/cjoudrey/md2medium
 ```
 
+## Usage
+
+Once installed using `md2medium` is as simple as:
+
+```
+$ md2medium my_article.md
+```
+
 ## Features
 
 **Syntax highlighting**
