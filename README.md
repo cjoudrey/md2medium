@@ -20,7 +20,7 @@ Medium does not support syntax highlighting of code blocks. Instead, you must
 create gists and embed the gists in your article.
 
 `md2medium` makes this chore much easier by automatically creating gists
-for any code blocks in your markdown file:
+for any code blocks in your Markdown file:
 
 ![](screenshot1.png)
 
@@ -33,7 +33,7 @@ under the image:
 
 **Metadata extraction**
 
-By embedding [YAML](http://yaml.org/) metadata at the top of a markdown file, extra information can be sent to Medium.
+By embedding [YAML](http://yaml.org/) metadata at the top of a Markdown file, extra information can be sent to Medium.
 
 For now, only tags can be specified in this format.
 
