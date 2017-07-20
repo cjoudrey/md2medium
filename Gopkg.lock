@@ -26,6 +26,12 @@
   version = "1.0"
 
 [[projects]]
+  name = "github.com/davecgh/go-spew"
+  packages = ["spew"]
+  revision = "346938d642f2ec3594ed81d874461961cd0faa76"
+  version = "v1.1.0"
+
+[[projects]]
   name = "github.com/fatih/color"
   packages = ["."]
   revision = "570b54cabe6b8eb0bc2dfce68d964677d63b5260"
@@ -41,7 +47,7 @@
   branch = "master"
   name = "github.com/google/go-github"
   packages = ["github"]
-  revision = "00874eae3fbfc6750bfff364b1897101684d2f30"
+  revision = "e062a8cd852f0fb981c8c9f837c214c4d1031870"
 
 [[projects]]
   branch = "master"
@@ -68,6 +74,12 @@
   revision = "9520e82c474b0a04dd04f8a40959027271bab992"
 
 [[projects]]
+  name = "github.com/pmezard/go-difflib"
+  packages = ["difflib"]
+  revision = "792786c7400a136282c1664665ae0a8db921c6c2"
+  version = "v1.0.0"
+
+[[projects]]
   name = "github.com/russross/blackfriday"
   packages = ["."]
   revision = "0b647d0506a698cca42caca173e55559b12a69f2"
@@ -80,22 +92,28 @@
   revision = "541ff5ee47f1dddf6a5281af78307d921524bcb5"
 
 [[projects]]
+  name = "github.com/stretchr/testify"
+  packages = ["assert"]
+  revision = "69483b4bd14f5845b5a1e55bca19e954e827f1d0"
+  version = "v1.1.4"
+
+[[projects]]
   branch = "master"
   name = "golang.org/x/net"
   packages = ["context","context/ctxhttp","html","html/atom"]
-  revision = "b3756b4b77d7b13260a0a2ec658753cf48922eac"
+  revision = "02ac38e2528ff4adea90f184d71a3faa04b4b1b0"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/oauth2"
   packages = [".","internal"]
-  revision = "cce311a261e6fcf29de72ca96827bdb0b7d9c9e6"
+  revision = "b53b38ad8a6435bd399ea76d0fa74f23149cca4e"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "4cd6d1a821c7175768725b55ca82f14683a29ea4"
+  revision = "7a4fde3fda8ef580a89dbae8138c26041be14299"
 
 [[projects]]
   name = "google.golang.org/appengine"
@@ -106,6 +124,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "a02a069cf9d5521cc7c1394e32b3b451f14ee36ddc42fa1a706123e8e2831adb"
+  inputs-digest = "173f72a5d6f66b7efbd7a08d63a7e24a1dbaa245944e043f08fec90db4617000"
   solver-name = "gps-cdcl"
   solver-version = 1
