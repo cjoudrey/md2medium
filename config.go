@@ -15,7 +15,7 @@ type Config struct {
 func LoadConfig() (*Config, error) {
 	config := &Config{}
 
-	configPath, err := configPath()
+	configPath, err := ConfigPath()
 	if err != nil {
 		return nil, err
 	}
@@ -36,7 +36,7 @@ func LoadConfig() (*Config, error) {
 }
 
 func SaveConfig(config *Config) error {
-	configPath, err := configPath()
+	configPath, err := ConfigPath()
 	if err != nil {
 		return err
 	}
@@ -50,7 +50,7 @@ func SaveConfig(config *Config) error {
 	return nil
 }
 
-func configPath() (string, error) {
+func ConfigPath() (string, error) {
 	user, err := user.Current()
 	if err != nil {
 		return "", err

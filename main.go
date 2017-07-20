@@ -62,6 +62,9 @@ func main() {
 	}
 
 	if configChanged {
+		configPath, _ := ConfigPath()
+		logger.Info(fmt.Sprintf("Saving config file: %s", configPath))
+
 		if err := SaveConfig(config); err != nil {
 			logger.Error(fmt.Sprintf("Failed to save config file: %s", err))
 		}
